@@ -1,0 +1,17 @@
+GET http://reduxblog.herokuapp.com/api/posts
+
+###
+
+POST http://reduxblog.herokuapp.com/api/posts
+content-type: application/json
+
+{
+  "id": 5,
+  "title": "The 5th Post",
+  "categories": "Dogs",
+  "content": "Doesn't everyone love a furrfriend?"
+}
+
+###
+
+GET http://reduxblog.herokuapp.com/api/posts/323331

@@ -15,3 +15,17 @@
 7. Then notfiy containers of the changes to state, which then the containers will rerender with new data
 
 click action > call an action creator > action creator returns an action > action flows to reducers > reducers assemble new state > new state flows into all containers
+
+# React Router
+
+Purpose is to completely circumvent the process to request web page from server, it intercepts changes to the url.
+
+Idea of Single Page Application (SPA) - no longer navigating between distinct HTML docs that are being created by some remote web server.
+Instead, always dealing with a single HTML doc and rely upon some javascript to change the set of components that a user sees appearing on screen.
+Shows user different sets of components.
+
+1. User changes url (by clicking)
+2. React Router pings History library (a package) to notify of new url
+3. History library does some parsing and figures out what exactly changed and then passes it to the React Router library
+4. React Router receives new route and decides what to show, a new set of components based on exactly what that new route is
+5. Tells React to re-render based on new set of components
