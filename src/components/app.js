@@ -5,7 +5,7 @@ import { withRouter } from 'react-router';
 import BooksProject from './booksProject';
 import WeatherProject from './weatherProject';
 import BlogProject from './blogProject';
-import PostsNew from '../containers/postsNew';
+import PostsNew from '../containers/PostsNew';
 
 class App extends Component {
   render() {
@@ -15,8 +15,8 @@ class App extends Component {
           <Route exact path="/" component={Content} />
           <Route path="/book" component={BooksProject} />
           <Route path="/weather" component={WeatherProject} />
+          <Route path="/blog/posts/new" component={PostsNew} />
           <Route path="/blog" component={BlogProject} />
-          <Route path="/blog/posts/new" component={PostNew} />
         </Switch>
       </div>
     );
